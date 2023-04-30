@@ -8,5 +8,6 @@
 body {
   direction: rtl;
   font-family: 'vazir';
+  overflow-x: hidden;
 }
 
