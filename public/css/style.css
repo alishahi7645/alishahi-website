@@ -4,4 +4,6 @@
     src : url('../fonts/vazir.ttf') format('truetype'),
     url('../fonts/vazir.woff') format('woff');
 }
-
+body{
+    font-family: 'vazir';
+}
