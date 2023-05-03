@@ -1,5 +1,6 @@
 import Aboute from './components/Aboute/Aboute.js';
 import Contact from './components/Contact/Contact.js';
+import Footer from './components/Footer/Footer.js';
 import Header from './components/Header/Header.js'
 import Home from './components/Home/Home.js';
 import Portfolio from './components/Portfolio/Portfolio.js';
@@ -13,6 +14,7 @@ function App() {
       <Services/>
       <Portfolio/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
