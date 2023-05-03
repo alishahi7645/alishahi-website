@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import homeimg from "../../assets/img/profile.png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <div id="home">
       <div className="container">
         <div className="row min-vh-100 align-items-center align-content-center">
-          <div className="col-md-6 mt-2 mt-md-0">
+          <div className="col-md-6 mt-2 mt-md-0" data-aos="fade-left">
             <img src={homeimg} alt="" />
           </div>
-          <div className="col-md-6 mt-2 mt-md-0">
+          <div className="col-md-6 mt-2 mt-md-0" data-aos="fade-right">
             <div class="home-text">
               <p class="text-muted mb-1">سلام من</p>
               <h1 class="text-danger fs-1 fw-bold">

@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Aboute() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <div className="aboute py-5">
       <div className="container py-5">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <section className="section-title text-center">
+            <section className="section-title text-center" data-aos="fade-left">
               <h2 className="fw-bold mb-5">درباره من</h2>
             </section>
           </div>
         </div>
 
         <div className="row mt-3">
-          <div className="col-md-6 mt-5 mt-md-0">
+          <div className="col-md-6 mt-5 mt-md-0" data-aos="flip-left">
             <div className="aboute-text">
               <h2 className="fs-4 fw-bold mb-3">
                 این متن درباره من است و امیدوارم خوب باشد
@@ -69,7 +76,7 @@ function Aboute() {
             </div>
           </div>
 
-          <div className="col-md-6 mt-5 mt-md-0">
+          <div className="col-md-6 mt-5 mt-md-0" data-aos="flip-right">
             <div className="skill-item mb-4">
               <h3 className="fs-6">Html</h3>
               <div className="progress" style={{ height: " 5px" }}>

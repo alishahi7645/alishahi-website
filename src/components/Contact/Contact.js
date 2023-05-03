@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="contact py-5" id="contact">
       <div className="container py-5">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <div className="section-title text-center">
+            <div className="section-title text-center" data-aos="fade-up">
               <h3 className="fw-bold mb-5">تماس با من</h3>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col-md-5">
+          <div className="col-md-5" data-aos="zoom-in-left">
             <div className="contact-item d-flex">
               <div className="icon fs-4 text-danger">
                 <i className="fas fa-envelope"></i>
@@ -41,7 +48,7 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="col-md-7">
+          <div className="col-md-7" data-aos="zoom-in-right">
             <div className="contact-form">
               <form>
                 <div className="row">
@@ -77,9 +84,9 @@ function Contact() {
                   </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-12">
-                        <button className="btn btn-danger px-4">ارسال</button>
-                    </div>
+                  <div className="col-lg-12">
+                    <button className="btn btn-danger px-4">ارسال</button>
+                  </div>
                 </div>
               </form>
             </div>

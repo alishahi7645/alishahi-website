@@ -1,19 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 import { AiOutlineBars } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 import "./Header.css";
 
 function Header() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const [showicon, setShowicon] = useState(false);
-  const togglemenu = () =>{
+  const togglemenu = () => {
     setShowicon(!showicon);
-  }
+  };
   return (
     <header id="header" className="shadow p-3">
       <div className="container">
         <Headeritem>
-        <div className="menu-icon" onClick={togglemenu}>
+          <div className="menu-icon" onClick={togglemenu}>
             {showicon ? (
               <RiCloseLine cursor={"pointer"} size={35} color="#000" />
             ) : (
@@ -37,7 +44,7 @@ function Header() {
             </ul>
           </div>
           <div className="header-left">
-            <h3>alishahi</h3>
+            <h3 data-aos="fade-down">alishahi</h3>
           </div>
         </Headeritem>
       </div>
