@@ -11,4 +11,26 @@ body {
   font-family: 'vazir';
   overflow-x: hidden;
 }
-
+.to-top{
+  position: fixed;
+  right: 20px;
+  bottom: 15px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: crimson;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+.to-top.active{
+  opacity: 1;
+  bottom: 40px;
+}
+.to-top svg{
+  font-size: 25px;
+}
