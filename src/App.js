@@ -29,6 +29,18 @@ function App() {
       <Contact />
       <Footer />
       <a href="#" className={showBtn ? 'to-top active' : 'to-top'}><FaChevronUp/></a>
+      <div className="darkmode">
+        <div className="dark-item">
+          <p>دارک مود</p>
+          <lable className="switch">
+            <input type="checkbox" name="" id="" />
+            <span className="slider round"></span>
+          </lable>
+        </div>
+        <div className="btn">
+          <i className="fab fa-instagram"></i>
+        </div>
+      </div>
     </div>
   );
 }

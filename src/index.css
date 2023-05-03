@@ -34,3 +34,12 @@ body {
 .to-top svg{
   font-size: 25px;
 }
+.darkmode{
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 120px;
+  height: 100vh;
+  background-color: #ffcbcb;
+}
