@@ -5,6 +5,7 @@ import Header from "./components/Header/Header.js";
 import Home from "./components/Home/Home.js";
 import Portfolio from "./components/Portfolio/Portfolio.js";
 import Services from "./components/Services/Services.js";
+import {FaChevronUp} from 'react-icons/fa';
 import "./index.css";
 function App() {
   return (
