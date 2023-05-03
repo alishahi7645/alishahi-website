@@ -64,7 +64,7 @@ const Headeritem = styled.div`
       margin-right: 10px;
       a {
         text-decoration: none;
-        color: #000;
+        color: #9069b4;
         font-weight: 500;
         font-size: 16px;
         transition: all 0.5s ease;

@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import '../../index.css'
 
-function Services() {
+function Services({dark}) {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -22,8 +23,8 @@ function Services() {
           </div>
         </div>
         <div className="row text-center">
-          <div className="col-md-6 col-lg-4 mb4" data-aos="fade-down">
-            <div className="service-item shadow-sm p-4 bg-white rounded">
+          <div className='col-md-6 col-lg-4 mb4 ' data-aos="fade-down">
+            <div className="service-item shadow-sm p-4  rounded">
               <div className="icon text-danger my-3 fs-2">
                 <i className="fas fa-code"></i>
               </div>
@@ -34,7 +35,7 @@ function Services() {
             </div>
           </div>
           <div className="col-md-6 col-lg-4 mb4" data-aos="fade-down">
-            <div className="service-item shadow-sm p-4 bg-white rounded">
+            <div className="service-item shadow-sm p-4 rounded">
               <div className="icon text-danger my-3 fs-2">
                 <i className="fas fa-lightbulb"></i>
               </div>
@@ -45,7 +46,7 @@ function Services() {
             </div>
           </div>
           <div className="col-md-6 col-lg-4 mb4" data-aos="fade-down">
-            <div className="service-item shadow-sm p-4 bg-white rounded">
+            <div className="service-item shadow-sm p-4 rounded">
               <div className="icon text-danger my-3 fs-2">
                 <i className="fas fa-image"></i>
               </div>
